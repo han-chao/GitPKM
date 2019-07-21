@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="Empty E4 Application" width="500" height="400"/>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="GitPKM" iconURI="" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_RZcTkKtrEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_VWafcKtrEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.perspective.note" label="笔记透视图">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_7RQfAKtrEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.partsashcontainer.main" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_CNfRUKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.partstack.left" containerData="20">
+            <children xsi:type="basic:Part" xmi:id="_SQHAYKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notecategories" label="笔记分类"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_M2EZkKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.partstack.center" containerData="20">
+            <children xsi:type="basic:Part" xmi:id="_TNpmsKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notelist" label="笔记列表"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_Njx0IKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.partstack.right" containerData="60">
+            <children xsi:type="basic:Part" xmi:id="_UCXBIKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notedetail" label="笔记内容"/>
+          </children>
+        </children>
+      </children>
+    </children>
+  </children>
   <rootContext xmi:id="_c3AF2cjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_c3AF2sjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_c3AF28jYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>

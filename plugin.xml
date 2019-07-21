@@ -9,10 +9,6 @@
             application="org.eclipse.e4.ui.workbench.swt.E4Application"
             name="top.hanchao.gitpkm">
          <property
-               name="applicationCSS"
-               value="platform:/plugin/top.hanchao.gitpkm/css/default.css">
-         </property>
-         <property
                name="appName"
                value="top.hanchao.gitpkm">
          </property>
