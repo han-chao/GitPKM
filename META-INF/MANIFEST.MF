@@ -6,3 +6,9 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: hanchao
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: top.hanchao.gitpkm
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.swt,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.ui.workbench,
+ org.eclipse.e4.ui.di,
+ org.eclipse.e4.core.di.extensions

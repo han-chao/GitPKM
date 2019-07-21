@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="GitPKM" iconURI="" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_RZcTkKtrEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_VWafcKtrEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.perspective.note" label="笔记透视图">
         <children xsi:type="basic:PartSashContainer" xmi:id="_7RQfAKtrEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.partsashcontainer.main" horizontal="true">
           <children xsi:type="basic:PartStack" xmi:id="_CNfRUKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.partstack.left" containerData="20">
-            <children xsi:type="basic:Part" xmi:id="_SQHAYKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notecategories" label="笔记分类"/>
+            <children xsi:type="basic:Part" xmi:id="_SQHAYKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notecategorytree" contributionURI="bundleclass://top.hanchao.gitpkm/top.hanchao.gitpkm.part.NoteCategoryTreePart" label="笔记分类"/>
           </children>
           <children xsi:type="basic:PartStack" xmi:id="_M2EZkKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.partstack.center" containerData="20">
-            <children xsi:type="basic:Part" xmi:id="_TNpmsKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notelist" label="笔记列表"/>
+            <children xsi:type="basic:Part" xmi:id="_TNpmsKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notelist" contributionURI="bundleclass://top.hanchao.gitpkm/top.hanchao.gitpkm.part.NoteListPart" label="笔记列表"/>
           </children>
           <children xsi:type="basic:PartStack" xmi:id="_Njx0IKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.partstack.right" containerData="60">
-            <children xsi:type="basic:Part" xmi:id="_UCXBIKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notedetail" label="笔记内容"/>
+            <children xsi:type="basic:Part" xmi:id="_UCXBIKtsEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.part.notedetail" contributionURI="bundleclass://top.hanchao.gitpkm/top.hanchao.gitpkm.part.NoteDetailPart" label="笔记内容"/>
           </children>
         </children>
       </children>
     </children>
+    <mainMenu xmi:id="_FtZTcKt8Eemz_7SjFvfKoA" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_UMv48Kt8Eemz_7SjFvfKoA" elementId="org.eclipse.ui.main.menu" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_gW3scKt8Eemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.handledmenuitem.save" command="_a18scKt6Eemz_7SjFvfKoA"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_rs8M0Kt8Eemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_y-tKQKt8Eemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.handledmenuitem.exit" label="Exit" command="_N8U5MKt7Eemz_7SjFvfKoA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_aeMB0Kt8Eemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.menu.edit" label="Edit">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_4UXAUKt8Eemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.handledmenuitem.new" label="New Note" command="_UBfgoKt7Eemz_7SjFvfKoA"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_YSmrUKuNEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.trimbar.top">
+      <children xsi:type="menu:ToolBar" xmi:id="_f01tsKuNEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_iiHMQKuNEemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.handledtoolitem.save" label="Save" iconURI="platform:/plugin/top.hanchao.gitpkm/icons/save_edit.png" command="_a18scKt6Eemz_7SjFvfKoA"/>
+      </children>
+    </trimBars>
   </children>
+  <handlers xmi:id="_8fTBoKt6Eemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.handler.saveall" contributionURI="bundleclass://top.hanchao.gitpkm/top.hanchao.gitpkm.handler.SaveAllHandler" command="_a18scKt6Eemz_7SjFvfKoA"/>
+  <handlers xmi:id="_BZ9S4Kt9Eemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.handler.exit" contributionURI="bundleclass://top.hanchao.gitpkm/top.hanchao.gitpkm.handler.ExitHandler" command="_N8U5MKt7Eemz_7SjFvfKoA"/>
   <rootContext xmi:id="_c3AF2cjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_c3AF2sjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_c3AF28jYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
+  <commands xmi:id="_a18scKt6Eemz_7SjFvfKoA" elementId="org.eclipse.ui.file.saveAll" commandName="Save"/>
+  <commands xmi:id="_N8U5MKt7Eemz_7SjFvfKoA" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <commands xmi:id="_UBfgoKt7Eemz_7SjFvfKoA" elementId="top.hanchao.gitpkm.command.new" commandName="New Note"/>
   <addons xmi:id="_c3AF0sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_c3AF08jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_c3AF1MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
